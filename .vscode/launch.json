@@ -31,7 +31,7 @@
             "request": "launch",
             "preLaunchTask": "RaspiDeploy_Linux",
             "program": "~/.dotnet/dotnet",
-            "args": [ "/home/pi/target/Pi868Receiver/Pi868Receiver.dll", "8", "123" ],
+            "args": [ "/home/pi/target/Pi868Receiver/Pi868Receiver.dll", "6", "123" ],
             "cwd": "~/target/Pi868Receiver",
             "stopAtEntry": true,
             "console": "internalConsole",

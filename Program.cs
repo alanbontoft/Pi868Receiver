@@ -1,6 +1,7 @@
 ﻿using System.IO.Ports;
 using System.Diagnostics;
 using System.Device.Gpio;
+using System.Text;
 
 
 namespace Pi868Receiver
@@ -160,6 +161,8 @@ namespace Pi868Receiver
                         port.Read(rxbuffer, 0, bytes);
                         
                         Console.WriteLine($"Data received: {formatData(rxbuffer, bytes)}");
+
+                        Console.WriteLine($"String format: {Encoding.UTF8.GetString(rxbuffer, 0, bytes)}");
 
                     }
 
